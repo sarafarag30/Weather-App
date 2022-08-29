@@ -1,0 +1,60 @@
+body{
+    background-color: #003651;
+}
+
+/* Start Header */
+.header{
+  background-color: #13537E;
+}
+.site-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-img{
+    width: 74px;
+    height: 74px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-color{
+    color: #17A2B8;
+}
+.logo-type{
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.site-description{
+    color: #bfc1c8;
+}
+ul li{
+    margin-right: 20px;
+}
+ul li a:hover{
+    color: #17A2B8 !important; 
+}
+/* End Header */
+/* Start temperature cards */
+.temp-info {
+    border-radius: 8px;
+    background-color: #13537E;
+    position: relative;
+}
+.temp-info .nextDay-status{
+    padding-bottom: 65px;
+}
+.temp-info .layer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.temp-info:hover .layer{
+    opacity: 1;
+    cursor: pointer;
+}
+/* End temperature cards */

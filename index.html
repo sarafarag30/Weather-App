@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Farag">
+    <meta name="description" content="Weather App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="images/icon.png"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section id="home">
+            <!-- Start Header -->
+            <div class="header">
+                    <nav class="navbar navbar-expand-lg ">
+                      <div class="container">
+                        <a class="navbar-brand" href="#">
+                          <img src="images/icon.png" class=" nav-img" alt="logo">
+                          <div class="logo-type d-inline-block ">
+                              <h1 class="site-title text-white">Weather</h1>
+                              <small class="site-description">tagline goes here</small>
+                          </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-grip-lines text-white"></i></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link text-white" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Live cameras</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Contact</a>
+                            </li>
+                          </ul>                     
+                        </div>
+                      </div> 
+                    </nav>
+            </div>
+            <!-- End Header -->
+            <!-- Start temperature cards -->
+            <div class="temp-cards my-5 py-2">
+              <div class="container">
+                <!-- Start Search-->
+                <div class="row justify-content-center align-items-center mb-5">
+                  <input type="text" class="form-control w-50" id="searchInput" placeholder="Search here..." name="citySearch">
+                </div>
+                <!-- End Search -->
+                <div class="row text-white">
+                  <!-- Today Details -->
+                  <div class="col-lg-4">
+                    <div class="temp-info mb-3">
+                      <div class="card-header d-flex justify-content-between">
+                        <p id="today"></p>
+                        <p id="todayDate"></p>
+                      </div>
+                      <div class="temp-details p-4">
+                        <p id="cityLocation"></p>
+                        <div class="d-flex justify-content-between my-4">
+                          <div class="pt-3">
+                            <h2 id="todayDegree" class="d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                          </div>
+                          <img id="todayIcon" alt="forcast image status" width="90"/>
+                        </div>
+                        <p id="todayStatus"></p>
+                        <div class="more-info">
+                          <i class="fa-solid fa-umbrella"></i>
+                          <span id="humidity"></span> <span class="mr-3">%</span>
+                          <i class="fa-solid fa-wind"></i>
+                          <span id="windSpeed"></span><span class="mr-3">Km/hr</span>
+                          <i class="fa-solid fa-compass"></i>
+                          <span id="windDirection"></span>
+                        </div>
+                      </div>
+                      <div class="layer"></div>
+                    </div>
+                  </div>
+                  <!--  Next Days Details -->
+                  <div class="col-lg-4">
+                    <div class="temp-info text-center mb-3">
+                      <div class="card-header d-flex justify-content-between">
+                        <p class="next-day"></p>
+                        <p class="next-date"></p>
+                      </div>
+                      <div class="temp-details pt-2">
+                        <div>
+                          <img class="nextDay-icon" alt="forcast image status" width="90">
+                        </div>
+                        <h2 class="maximum d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2><br>
+                        <p class="minimum d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                        <p class="nextDay-status"></p>
+                      </div>
+                      <div class="layer"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="temp-info text-center mb-3 ">
+                      <div class="card-header d-flex justify-content-between">
+                        <p class="next-day"></p>
+                        <p class="next-date"></p>
+                      </div>
+                      <div class="temp-details pt-2">
+                        <div>
+                          <img class="nextDay-icon" alt="forcast image status" width="90">
+                        </div>
+                        <h2 class="maximum d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2><br>
+                        <p class="minimum d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                        <p class="nextDay-status"></p>
+                      </div>
+                      <div class="layer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End temperature cards -->
+    </section>
+    <section id="download" class="pb-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="text-white">
+              <div class="download-info pl-3">
+                <h3>App Download</h3>
+                <p>This is the best weather forecast app with local weather and accurate weather daily.</p>
+              </div>
+            </div>
+            <div class="download-btn pr-3">
+              <button class="btn btn-outline-info text-white mr-4">Download Android</button>
+              <button class="btn btn-outline-info text-white">Download IOS</button>
+            </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
